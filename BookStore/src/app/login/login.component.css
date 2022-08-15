@@ -1,0 +1,19 @@
+p{
+    color:red;
+    padding-left:100px;
+    font-size:x-small;
+}.container{
+    width: 500px;
+    clear: both;
+    justify-content: left;
+    position: absolute;
+}
+.container input{
+    width: 100%;
+    clear: both;
+}
+@media screen and (max-width:1020px) {
+    .container {
+        width: auto;
+    }
+}

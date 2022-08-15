@@ -1,0 +1,29 @@
+<!-- <h1>Books Available</h1>
+<div class="container">
+    <div *ngFor="let ele of book" class="row">
+        <div class="col-4 book text-center">
+            <p>Title:{{ele.Title}}</p>
+            <p>Author:{{ele.author}}</p>
+            <p>Language:{{ele.language}}</p>
+            <p>Pages:{{ele.Pages}}</p>
+            <p>Year:{{ele.PublishYear}}</p>
+            <p>Country:{{ele.Country}}</p>
+          <button (click)="wishList(ele)" class="btn btn-success">WishList</button>
+          <br>
+          <br>
+          <button (click)="completed(ele)" class="btn btn-success">Completed</button>
+        </div>
+    </div>
+</div> -->
+<h1 class="store-headers" align="center">Welcome to Book Store</h1>
+<div class="row">
+<div class="column" *ngFor="let image of book" >
+    <div class="product-image"><img src="{{image.imageLink}}" height="320px"/></div>
+    <br>
+    <div class="product-author">Author:{{image.author}}</div>
+    <div class="product-title">Title:{{image.title}}</div>
+    <button type="button" class="btn btn-outline-primary" (click)="wishList(image)"  >WhishList</button>
+    <button type="button" class="btn btn-outline-primary"  (click)="completed(image)" >Completed</button>
+    <hr>
+</div>
+</div>

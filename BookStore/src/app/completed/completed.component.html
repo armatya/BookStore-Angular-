@@ -1,0 +1,28 @@
+<h1 *ngIf="success">Completed Books</h1>
+<!-- <div *ngIf="success" class="container">
+    <div *ngFor="let ele of completedElements"
+    class="row">
+    <div class="col-4 book text-center">
+        <p>Title:{{ele.title}}</p>
+            <p>Author:{{ele.author}}</p>
+            <p>Language:{{ele.language}}</p>
+            <p>Pages:{{ele.pages}}</p>
+            <p>Publishyear:{{ele.year}}</p>
+            <p>Country:{{ele.country}}</p>
+    </div>
+</div>
+</div>
+<h2 *ngIf="!success">Login to See Your Completed Books</h2>  -->
+<div *ngIf="success">
+    <div class="row">
+        <div class="column" *ngFor="let details of completedElements" >
+            <div class="product-image"><img src="{{details.imageLink}}" height="340px"/></div>
+            <br>
+            <div class="product-author">Author:{{details.author}}</div>
+            <div class="product-title">Title:{{details.title}}</div>
+            <div class="product-language">Language:{{details.language}}</div>
+            <hr>
+        </div>
+</div>
+</div>
+<h2 *ngIf="!success">Login to See Your Completed Books</h2>

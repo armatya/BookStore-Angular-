@@ -1,0 +1,31 @@
+export class Books{
+    id:number;
+    author:String;
+    country:String;
+    imageLink:String;
+    language:String;
+    link:String;
+    pages:number;
+    title:String;
+    year:number;
+    constructor(id:number,
+        author:String,
+        country:String,
+        imageLink:String,
+        language:String,
+        link:String,
+        pages:number,
+        title:String,
+        year:number,){
+            this.id=id;
+            this.author=author;
+            this.country=country;
+            this.imageLink=imageLink;
+            this.language=language;
+            this.link=link;
+            this.pages=pages;
+            this.title=title;
+            this.year=year;
+        }
+
+}
